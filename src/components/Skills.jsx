@@ -1,6 +1,13 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
+const SkillsDiv = styled.div`
+    background:white;
+    border-radius:5px;
+    padding:20px;
+    box-shadow: 0px 2px 3px 0px #9E9E9E;
+`;
+
 const SkillsContainer = styled.div`
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -55,7 +62,7 @@ const SkillsSpan = styled.span`
 `;
 
 const Skills = props => (
-    <div className="Skills">
+    <SkillsDiv>
         <SkillsContainer>
             {
                 props.data.map((skill, index) => (
@@ -68,7 +75,7 @@ const Skills = props => (
                 ))
             }
         </SkillsContainer>
-    </div>
+    </SkillsDiv>
 );
 
 export default Skills;

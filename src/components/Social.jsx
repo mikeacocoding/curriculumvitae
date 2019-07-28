@@ -4,6 +4,10 @@ import styled, { ThemeProvider } from 'styled-components';
 const SocialStyle = styled.div`
     margin:0 auto;
     display:block;
+    background:white;
+    border-radius:5px;
+    padding: 20px;
+    box-shadow: 0px 2px 3px 0px #9E9E9E;
 `;
 
 const SocialUl = styled.ul`

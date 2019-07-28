@@ -10,13 +10,11 @@ const AboutAvatar = styled.div`
     padding:2em 0 0 0;
 `;
 const AboutImg = styled.img`
-    border-radius:100%;
-    width:160px;
-    height:160px;
-    border:2px solid #E91E63;
+    border-radius: 20px;
+    width: 200px;
     margin: 0 auto;
-    display:block;
-    box-shadow:0 0 10px rgba(0,0,0,0.6);
+    display: block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
 `;
 
 const AboutName = styled.div`
@@ -50,18 +48,18 @@ const AboutLocation = styled.p`
     font-weigth:400;
 `;
 
-const About = ({avatar,name,profession,bio,address,social}) => (
+const About = ({ avatar, name, profession, bio, address, social }) => (
     <AboutStyle>
         <div className="About-container">
             <AboutAvatar>
                 <figure>
-                    <AboutImg src={avatar} alt={name}/>
+                    <AboutImg src={avatar} alt={name} />
                 </figure>
             </AboutAvatar>
             <AboutName>
                 <AboutH2>{name}</AboutH2>
             </AboutName>
-            <AboutProfession>  
+            <AboutProfession>
                 <p>{profession}</p>
             </AboutProfession>
             <div className="About-desc">
@@ -71,7 +69,7 @@ const About = ({avatar,name,profession,bio,address,social}) => (
                 <AboutLocation>{address}</AboutLocation>
             </div>
             <div className="About-social">
-                <Social social={social}/>
+                <Social social={social} />
             </div>
         </div>
     </AboutStyle>
