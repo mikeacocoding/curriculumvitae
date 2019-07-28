@@ -26,14 +26,14 @@ const AboutH2 = styled.h2`
     font-weight:400px;
     letter-spacing:1.2px;
     margin:.5em 0 0 0;
-    color:#C2185B;
+    color:#039688;
 `;
 
 const AboutProfession = styled.p`
 margin:.2em 0 1em 0;
 letter-spacing:1.6px;
 font-weight:300;
-color:#C2185B;
+color:#039688;
 `;
 
 const AboutBio = styled.p`
