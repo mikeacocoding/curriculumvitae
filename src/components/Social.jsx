@@ -58,8 +58,8 @@ const Social = props => (
         {props.social &&
             <SocialUl>
                 {props.social.map((item, index) => (
-                    <SocialLi key={`social-${index}`} target="_blank">
-                        <SocialAnchor href={item.url}>
+                    <SocialLi key={`social-${index}`}>
+                        <SocialAnchor href={item.url} target="_blank">
                             <ThemeProvider theme={getColor(item.name)}>
                                 <SocialIcon className={`fab fa-${item.name}`} />
                             </ThemeProvider>
